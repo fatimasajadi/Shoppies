@@ -1,0 +1,47 @@
+.movie {
+  margin-top: 5em;
+  border-radius: 15px;
+  background-color: var(--dark);
+  padding-top: 1em;
+  padding-left: 130px;
+  position: relative;
+  height: 9em;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+.movie .poster {
+  position: absolute;
+  left: 15px;
+  bottom: 13px;
+}
+
+.movie .poster img {
+  border-radius: 15px;
+  width: 100px;
+  height: 150px;
+  object-fit: cover;
+}
+
+.movie .title {
+  font-weight: 500;
+  font-size: 1em;
+  font-weight: 700;
+  margin-bottom: 5px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.movie .type {
+  --tag-color: #e1b12c;
+  color: var(--tag-color);
+  border: 1px solid var(--tag-color);
+  padding: 2px 5px;
+  border-radius: 3px;
+  display: inline-block;
+}
+
+.movie .year {
+  color: var(--subdue-text);
+  margin-bottom: 10px;
+}
