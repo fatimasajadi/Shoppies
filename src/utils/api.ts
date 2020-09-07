@@ -1,6 +1,6 @@
 import qs from "qs";
 
-const baseUrl = "http://www.omdbapi.com/";
+const baseUrl = "https://www.omdbapi.com/";
 
 enum Type {
   Movie = "movie",
