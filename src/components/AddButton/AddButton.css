@@ -1,0 +1,62 @@
+button.add-button {
+  width: 2em;
+  height: 2em;
+  line-height: 2em;
+  padding: 0;
+  background: none;
+  border: none;
+  display: flex;
+  flex-direction: row-reverse;
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+  border-radius: 15px;
+  background-color: #e1b12c;
+  border: 2px solid transparent;
+}
+
+button.add-button .additional-text {
+  overflow: hidden;
+  width: 0;
+  font-weight: 700;
+}
+
+button.add-button svg {
+  height: 50%;
+  width: 1em;
+}
+
+button.add-button:not(.added):hover {
+  width: 7.5em;
+  background-color: #fbc531;
+}
+
+button.add-button:hover .additional-text {
+  width: 5.5em;
+}
+
+button.add-button:hover,
+button.add-button,
+button.add-button:hover .additional-text,
+button.add-button .additional-text {
+  transition: all 0.3s ease;
+}
+
+button.add-button.added {
+  background-color: #e84118;
+  color: white;
+  border-color: #e84118;
+}
+
+button.add-button.added svg {
+  transform: rotate(45deg);
+}
+
+button.add-button.added .additional-text {
+  display: none;
+}
+
+button.add-button.added:hover {
+  background-color: #fff;
+  color: #e84118;
+}
