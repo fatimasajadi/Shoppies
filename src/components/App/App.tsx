@@ -56,7 +56,7 @@ function App() {
       setIsInitial(false);
     }
     handleSearch(term);
-  }, [term, mounted]);
+  }, [handleSearch, term, mounted, isInitial]);
 
   useEffect(() => {
     setShowBanner(false);
