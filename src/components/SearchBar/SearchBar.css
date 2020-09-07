@@ -15,3 +15,17 @@
   font-size: 1.2em;
   font-weight: 500;
 }
+
+.search-bar.initial input {
+  border-bottom: 2px solid var(--dark);
+  background: none;
+  box-shadow: none;
+  border-radius: 0;
+  margin-top: 35vh;
+  padding: 1.2em 0.2em;
+}
+
+.search-bar.initial input,
+.search-bar input {
+  transition: all 0.6s ease-in-out;
+}
