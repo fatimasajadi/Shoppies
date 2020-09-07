@@ -1,7 +1,11 @@
 :root {
-  --darker: #2f3640;
-  --dark: #353b48;
+  --darker: #27241d;
+  --dark: #423d33;
   --subdue-text: #dcdde1;
+}
+
+html {
+  overflow-y: visible;
 }
 
 body {
@@ -20,4 +24,12 @@ code {
 
 * {
   box-sizing: border-box;
+}
+
+svg {
+  fill: currentColor;
+}
+
+h3 small {
+  font-weight: 400;
 }
