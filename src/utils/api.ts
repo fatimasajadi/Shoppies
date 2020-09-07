@@ -23,7 +23,7 @@ export interface Movie {
 
 interface SearchResponse {
   Search: Movie[];
-  totalResults: string;
+  totalResults: number;
 }
 
 class OMDBApi {
@@ -45,8 +45,14 @@ class OMDBApi {
   }
 
   public async searchMovie(term: string): Promise<SearchResponse> {
-    // return this.request({ s: term });
+    const result = await this.request({ s: term });
+    return {
+      Search: result.Search ?? [],
+      totalResults: result.totalResults ? Number(result.totalResults) : 0,
+    };
 
+    // For testing and not exploiting my API key
+    /*
     return {
       Search: [
         {
@@ -130,8 +136,9 @@ class OMDBApi {
             "https://m.media-amazon.com/images/M/MV5BMzRiMjRkNDYtNjNmZC00MTQwLThjNGQtZDEzZDA0OWVlOWUxXkEyXkFqcGdeQXVyMjAxODI1Nzk@._V1_SX300.jpg",
         },
       ],
-      totalResults: "1891",
+      totalResults: 10,
     };
+    */
   }
 }
 

@@ -1,11 +1,38 @@
 .movies {
   display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
+  grid-template-columns: repeat(5, minmax(0, 1fr));
   grid-gap: 1em;
   padding-bottom: 1em;
+}
+
+.nominated-movies-wrapper {
+  animation: slideDown 1s ease-out;
+  overflow-y: hidden;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  padding-bottom: 15px;
+  margin-bottom: 15px;
 }
 
 .app {
   width: 1200px;
   margin: auto;
+  min-width: 100vh;
+}
+
+.banner {
+  float: right;
+  color: #fbc531;
+  font-weight: 400;
+}
+
+@keyframes slideDown {
+  from {
+    max-height: 0;
+    opacity: 0;
+  }
+
+  to {
+    max-height: 500px;
+    opacity: 1;
+  }
 }
