@@ -2,7 +2,7 @@ import qs from "qs";
 
 const baseUrl = "https://www.omdbapi.com/";
 
-enum Type {
+export enum Type {
   Movie = "movie",
   Series = "series",
   Episode = "episode",
