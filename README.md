@@ -1,4 +1,4 @@
-**[You can check out the project here](https://xenodochial-bell-c0b4c5.netlify.app/)**
+**[Check it live here](https://xenodochial-bell-c0b4c5.netlify.app/)**
 
 ## Final Product
 
@@ -18,14 +18,12 @@
 - Users cannot nominate more than 5 movies
 - Users can delete movies that are already nominated from the nominated movie list by clicking on the delete button
 
-## Available Scripts
+## Running the project
+
+1. Obtain an api key from http://www.omdbapi.com/.
+1. Create a file named `.env` in the root of the project
+1. Add this to the `.env` file: `REACT_APP_OMDB_API_KEY=[your api key from step 1]`
+1. `yarn`
+1. `yarn start`
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
-### `yarn start`
-
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
